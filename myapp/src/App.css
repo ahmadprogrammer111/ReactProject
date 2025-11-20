@@ -1,0 +1,153 @@
+#root {
+  background-color: rgb(228, 222, 211);
+  --orangered: #ff4500;
+  /* --grey: #989898; */
+  --light-grey: #acacac;
+  --black: #000000;
+  --maroon: #800000;
+  --orange: #f29c33;
+  --light-blue: #C4E5FC;
+  width: 100vw;
+  height: 300vh;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+
+@font-face {
+  font-family: "Roboto";
+  src: url();
+}
+
+/* @font-face {
+  font-family: "Roboto-Thin";
+  src: url(./assets/fonts/Roboto-Thin.ttf);
+
+} */
+
+.main-container {
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.bgimage-container {
+  flex-wrap: wrap;
+  display: flex;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/Images/hero.png");
+  /* height: 110vh; */
+  width: 91vw;
+  height: 85vh;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: space-evenly;
+  /* justify-content: baseline; */
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.UNLEASH {
+  /* background-color: #fff; */
+  width: 50%;
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+  font-family: "Montserrat";
+  margin: 1rem;
+}
+
+.aroma {
+  /* height: auto; */
+  width: 35%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  /* background-color: red; */
+  margin: 0rem;
+}
+
+.RECIPE {
+  font-size: 14px;
+  background-color: var(--orangered);
+  text-align: center;
+  width: 5vw;
+  align-self: center;
+  border-radius: 15px;
+}
+
+.explore-recipes,
+.explore-recipes:hover,
+.explore-recipes:active,
+.explore-recipes:focus {
+  background-color: var(--orange);
+  color: var(--black);
+  border-radius: 50px;
+  border: none;
+  outline: none;
+}
+
+.card-sec {
+  margin-top: 40px;
+  background-color: var(--light-blue);
+  padding: 45px;
+  border-radius: 45px;
+}
+
+.card-sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 350px
+}
+
+.card-sec .right-sec .menu-li {
+  display: flex;
+  color: black;
+  word-spacing: 1px;
+  font-family: "Ro";
+  font-weight: 700;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  justify-content: space-between;
+  border-bottom: 1px solid #000000;
+}
+
+.card-sec .left-sec {
+  align-self: flex-end;
+  color: black;
+
+}
+
+.our-pallete {
+  margin: 0;
+  font-size: 40px;
+  line-height: 40px;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.our-pallete-para {
+  font-family: "Roboto-Thin";
+  font-size: 18px;
+}
+
+.see-more,
+.see-more:hover,
+.see-more:focus,
+.see-more:active {
+  background-color: transparent;
+  border: 1px solid var(--black);
+  border-radius: 40px;
+  color: var(--black);
+  font-size: 14px;
+  outline: none;
+}
