@@ -20,6 +20,7 @@ export default function App() {
             <div className="card-sec">
 
                 <div className="left-sec">
+                    <button className="EXPLORE-button">EXPLORE</button>
                     <p className="our-pallete">OUR DIVERSE <br></br>PALLETE</p>
                     <p className="our-pallete-para">If you are a breakfast enthusiast, a connoisseur of savory delights, or
                         on the lookout for irresistible desserts, our curated selection has
@@ -55,6 +56,9 @@ export default function App() {
             <div className="heading-container">
                 <p className='RECIPE'>RECIPES</p>
             </div>
+
+
+
 
         </div >
     )

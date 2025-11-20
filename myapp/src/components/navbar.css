@@ -1,7 +1,8 @@
+@import "./styles/variables.css";
+
 .navbar-container {
     /* background-color: ; */
-    --light-grey: #d1cece;
-    --black: #000000;
+
     background-color: transparent;
     backdrop-filter: blur(8px);
     position: sticky;
