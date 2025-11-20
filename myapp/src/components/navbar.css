@@ -1,5 +1,7 @@
 .navbar-container {
     /* background-color: ; */
+    --light-grey: #d1cece;
+    --black: #000000;
     background-color: transparent;
     backdrop-filter: blur(8px);
     position: sticky;
@@ -17,9 +19,19 @@
     padding: 1%;
     margin: 1.5rem;
 
+
 }
 
 
+@font-face {
+    font-family: "RobotoVariable";
+    src: url("./assets/fonts/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    /* allows any weight from ultra-thin to black */
+    font-stretch: 75% 125%;
+    /* allows condensed → super wide */
+    font-display: swap;
+}
 
 .logo-container {
     display: flex;
@@ -80,6 +92,7 @@
     /* height: 3vh; */
     border-bottom: 4px solid transparent;
     border-radius: 4px;
+    font-family: "RobotoVariable";
     font-size: 16px;
     padding-bottom: 4px;
 }
@@ -111,7 +124,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    --light-grey: #d1cece;
+
     background-color: var(--light-grey);
     height: 40px;
     width: 43px;
@@ -120,10 +133,14 @@
 }
 
 .subscribe {
+    font-family: "RobotoVariable";
+    font-weight: 750;
     font-size: 14px;
     border-radius: 25px;
+    border-width: 0;
     width: 7vw;
     cursor: pointer;
+    background-color: var(--black);
 }
 
 .subscribe:hover {
@@ -144,12 +161,4 @@
     100% {
         transform: scale(1);
     }
-}
-
-.subscribe:focus {
-    outline: none;
-}
-
-.subscribe:focus-visible {
-    outline: auto;
 }

@@ -52,11 +52,9 @@ export default function App() {
                 </div>
             </div>
 
-
             <div className="heading-container">
                 <p className='RECIPE'>RECIPES</p>
             </div>
-
 
         </div >
     )
