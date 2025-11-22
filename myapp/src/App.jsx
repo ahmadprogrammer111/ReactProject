@@ -1,7 +1,10 @@
 import "./App.css"
 import Navbar from './components/navbar'
 import { LiaUtensilsSolid } from "react-icons/lia";
-
+import { LiaHamburgerSolid } from "react-icons/lia";
+import { MdOutlineFastfood } from "react-icons/md";
+import { LuDessert } from "react-icons/lu";
+import { GiTacos } from "react-icons/gi";
 
 
 export default function App() {
@@ -20,7 +23,7 @@ export default function App() {
             <div className="card-sec">
 
                 <div className="left-sec">
-                    <button className="EXPLORE-button">EXPLORE</button>
+                    <div className="EXPLORE-button-div">EXPLORE</div>
                     <p className="our-pallete">OUR DIVERSE <br></br>PALLETE</p>
                     <p className="our-pallete-para">If you are a breakfast enthusiast, a connoisseur of savory delights, or
                         on the lookout for irresistible desserts, our curated selection has
@@ -35,19 +38,19 @@ export default function App() {
                         <p>BREAKFAST</p>
                     </div>
                     <div className="menu-li">
-                        <LiaUtensilsSolid color="black" size={40} />
+                        <LiaHamburgerSolid color="black" size={40} />
                         <p>LUNCH</p>
                     </div>
                     <div className="menu-li">
-                        <LiaUtensilsSolid color="black" size={40} />
+                        < MdOutlineFastfood color="black" size={40} />
                         <p>DINNER</p>
                     </div>
                     <div className="menu-li">
-                        <LiaUtensilsSolid color="black" size={40} />
+                        <LuDessert color="black" size={40} />
                         <p>DESERT</p>
                     </div>
                     <div className="menu-li">
-                        <LiaUtensilsSolid color="black" size={40} />
+                        <GiTacos color="black" size={40} />
                         <p>QUICK BITE</p>
                     </div>
                 </div>
@@ -57,9 +60,21 @@ export default function App() {
                 <p className='RECIPE'>RECIPES</p>
             </div>
 
+            <div className="cta-section">
+                <div className="cta-inner">
+                    <p className="EXPLORE">EXPLORE</p>
+                    <h2 className="jointhefun">JOIN THE FUN<br></br>SUBSCRIBE NOW!</h2>
+                    <p className="jointhefunpara">Subscribe to our newsletter for a weekly serving of recipes, cooking tips, and exclusive insights straight to your inbox.</p>
+                    <div className="input_button">
+                        <input type="text" className="emailaddress" placeholder="Email Address" pl />
+                        <button className="SUBSCRIBE">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
 
 
+            <Navbar varient="Footer" />
 
-        </div >
+        </div>
     )
 }

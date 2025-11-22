@@ -1,4 +1,4 @@
-@import "./styles/variables.css";
+/* @import "./styles/variables.css"; */
 
 #root {
   background-color: rgb(228, 222, 211);
@@ -6,19 +6,6 @@
   height: 300vh;
 }
 
-@font-face {
-  font-family: "Montserrat";
-  src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
-}
-
-
-@font-face {
-  font-family: "RobotoVariable";
-  src: url("./assets/fonts/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
-  font-weight: 100 900;
-  font-stretch: 75% 125%;
-  font-display: swap;
-}
 
 .main-container {
   margin-right: 60px;
@@ -40,7 +27,6 @@
   background-repeat: no-repeat;
   align-items: center;
   justify-content: space-evenly;
-  /* justify-content: baseline; */
   flex-direction: column;
   padding: 2rem 0;
 }
@@ -53,7 +39,7 @@
   font-weight: 700;
   text-align: center;
   line-height: 1;
-  font-family: "Montserrat";
+  font-family: "MontserratVariable";
   margin: 1rem;
 }
 
@@ -125,8 +111,9 @@
   color: black;
 }
 
-.EXPLORE-button {
+.EXPLORE-button-div {
   font-family: "RobotoVariable";
+  max-width: fit-content;
   font-size: 14px;
   color: var(--white);
   /* border: 1px solid transparent;*/
@@ -143,7 +130,7 @@
   margin: 0;
   font-size: 40px;
   line-height: 40px;
-  font-family: "Montserrat";
+  font-family: "MontserratVariable";
   font-weight: 700;
 }
 
@@ -169,4 +156,96 @@
   color: var(--black);
   /* font-size: 14px; */
   outline: none;
+}
+
+.cta-section {
+  height: 450px;
+  width: auto;
+  padding: 20px;
+  background: url(./assets//Images/footer.png) no-repeat center center/cover;
+  display: flex;
+  /* flex: 1; */
+  justify-content: center;
+  margin-top: 48px;
+  border-radius: 50px;
+}
+
+.cta-section .cta-inner {
+  max-width: 700px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.cta-section .cta-inner .EXPLORE {
+  font: "RobotoVariable";
+  font-stretch: 85%;
+  font-size: 17px;
+  font-weight: 550;
+  margin-bottom: 0px;
+
+}
+
+.cta-section .cta-inner .jointhefun {
+  font-family: "MontserratVariable";
+  font-size: 4rem;
+  line-height: 4rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.cta-section .cta-inner .jointhefunpara {
+  font-family: "Roboto-Variable";
+  font-size: 20px;
+  line-height: 1.5rem;
+}
+
+.cta-section .cta-inner .input_button {
+  background-color: var(--grey-white);
+  max-width: 300px;
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  flex-direction: row;
+  max-height: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 25px;
+}
+
+
+.cta-section .cta-inner .emailaddress {
+  background-color: var(--grey-white);
+  color: var(--black);
+  width: 160px;
+  border: none;
+  outline: none;
+}
+
+.cta-section .cta-inner .SUBSCRIBE {
+  background-color: var(--black);
+  margin-right: 12px;
+  font-size: 11px;
+  width: 150%;
+  font-family: "RobotoVariable";
+  padding: 10px;
+  border-radius: 25px;
+}
+
+::placeholder {
+  color: #9c9c9c;
+  /* ← Your grey (change anytime) */
+  /* font-family: "RobotoVariable", sans-serif; */
+  /* font-weight: 300; */
+  /* Thin & elegant */
+  /* font-stretch: 108%; */
+  /* Slightly wide – matches your style */
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  opacity: 1;
+  /* ← Critical: fixes Firefox looking faded */
 }
