@@ -1,17 +1,20 @@
+
 import React from 'react'
 import burger from '../assets/Images/burger.png'
 import { IoSearchSharp } from "react-icons/io5";
-import "./navbar.css"
-
+import "./Navbar.css"
 import { useEffect, useState } from 'react'
 
 
 
-function Navbar({ varient = "header" }) {
 
-    const isFooter = varient === 'Footer'
 
-    console.log("isFooter:", isFooter)
+
+function Navbar() {
+
+
+
+
 
 
     const [scrolled, setScrolled] = useState(false)
@@ -24,21 +27,24 @@ function Navbar({ varient = "header" }) {
 
     }, [])
 
+
     return (
-        <div className="navbar-container" style={{ "--nav-bg": isFooter ? "#262522" : "transparent" }}>
+
+        < div className={"navbar-container"}>
+
 
 
             <div className="logo-container">
                 <img src={burger} alt="myburger" className='burger' />
-                <p className='slogan' style={{ "--slogan-color": isFooter ? "white" : "black" }}>Cooks <br></br>Delight</p>
+                <p className='slogan'>Cooks <br></br>Delight</p>
             </div>
 
             <nav className="navbar">
                 <ul className="unordered-list">
-                    <li className={`list-item ${!isFooter && scrolled ? "scrolled" : ""}`}>HOME</li>
-                    <li className={`list-item ${!isFooter && scrolled ? "scrolled" : ""}`}>RECIPES</li>
-                    <li className={`list-item ${!isFooter && scrolled ? "scrolled" : ""}`}>COOKING TIPS</li>
-                    <li className={`list-item ${!isFooter && scrolled ? "scrolled" : ""}`}>ABOUT</li>
+                    <li className={`list-item ${scrolled ? "scrolled" : ""}`}>HOME</li>
+                    <li className={`list-item ${scrolled ? "scrolled" : ""}`}>RECIPES</li>
+                    <li className={`list-item ${scrolled ? "scrolled" : ""}`}>COOKING TIPS</li>
+                    <li className={`list-item ${scrolled ? "scrolled" : ""}`}>ABOUT</li>
                 </ul>
             </nav>
 
@@ -51,7 +57,11 @@ function Navbar({ varient = "header" }) {
             </div>
 
 
-        </div>
+
+
+
+        </div >
+
     )
 }
 

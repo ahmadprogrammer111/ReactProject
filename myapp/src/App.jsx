@@ -1,5 +1,8 @@
 import "./App.css"
-import Navbar from './components/navbar'
+import Tag from "./assets/Images/Tag.png"
+import Recipe_img from "./assets/Images/Recipe_img.png"
+import Navbar from './components/Navbar.jsx'
+import Footer from "./components/Footer1.jsx"
 import { LiaUtensilsSolid } from "react-icons/lia";
 import { LiaHamburgerSolid } from "react-icons/lia";
 import { MdOutlineFastfood } from "react-icons/md";
@@ -7,7 +10,7 @@ import { LuDessert } from "react-icons/lu";
 import { GiTacos } from "react-icons/gi";
 
 
-export default function App() {
+function App() {
     return (
         <div className="main-container">
 
@@ -19,6 +22,50 @@ export default function App() {
                 <button className="explore-recipes">EXPLORE RECIPES</button>
             </div>
 
+
+            <div className="our-featured">
+                <h2>Featured Recipe</h2>
+                <div className="featured-grid">
+                    <div className="respi-card">
+                        <img src={Tag} className="Tag" />
+                        <img src={Recipe_img} className="veg-respi" />
+                        <div className="content-sec">
+                            <p className="card-title">Savory Herb-Infused Chicken</p>
+                            <p className="card-para">Indulge in the rich and savory symphony of flavors with our Savory Herb-Infused Chicken</p>
+                            <div className="footer-sec">
+                                <p className="time">40 Min - easy prep - 3 serves</p>
+                                <button className="button">View Recipe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="respi-card">
+                        <img src={Tag} className="Tag" />
+                        <img src={Recipe_img} className="veg-respi" />
+                        <div className="content-sec">
+                            <p className="card-title">Savory Herb-Infused Chicken</p>
+                            <p className="card-para">Indulge in the rich and savory symphony of flavors with our Savory Herb-Infused Chicken</p>
+                            <div className="footer-sec">
+                                <p className="time">40 Min - easy prep - 3 serves</p>
+                                <button className="button">View Recipe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="respi-card">
+                        <img src={Tag} className="Tag" />
+                        <img src={Recipe_img} className="veg-respi" />
+                        <div className="content-sec">
+                            <p className="card-title">Savory Herb-Infused Chicken</p>
+                            <p className="card-para">Indulge in the rich and savory symphony of flavors with our Savory Herb-Infused Chicken</p>
+                            <div className="footer-sec">
+                                <p className="time">40 Min - easy prep - 3 serves</p>
+                                <button className="button">View Recipe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div className="card-sec">
 
@@ -71,10 +118,10 @@ export default function App() {
                     </div>
                 </div>
             </div>
-
-
-            <Navbar varient="Footer" />
+            <Footer />
 
         </div>
     )
 }
+
+export default App

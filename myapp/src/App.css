@@ -1,10 +1,11 @@
-/* @import "./styles/variables.css"; */
-
 #root {
   background-color: rgb(228, 222, 211);
-  width: 100vw;
-  height: 300vh;
+  width: 99vw;
+  height: max-content;
 }
+
+
+
 
 
 .main-container {
@@ -75,6 +76,99 @@
   font-size: 12px;
   font-weight: 500;
   /* font-stretch: 80; */
+}
+
+.our-featured {
+  border: 1px solid var(--black);
+  border-radius: 30px;
+  margin: 60px 0px;
+  padding: 20px;
+}
+
+.our-featured h2 {
+  /* background-color: red; */
+  font-family: "MontserratVariable", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--light-black);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px
+}
+
+.respi-card {
+  border: 1px solid var(--light-black);
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--grey-white);
+  width: 632px
+}
+
+.content-sec {
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 24px;
+}
+
+.card-title {
+  font-family: "MontserratVariable";
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--black);
+  margin: 0%
+}
+
+.card-para {
+  font-family: "RobotoVariable";
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--black);
+
+}
+
+
+
+.respi-card .veg-respi {
+  width: 100%;
+
+}
+
+.respi-card .Tag {
+  position: absolute;
+  right: 20px;
+  top: 45%
+}
+
+.footer-sec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.time {
+  font-family: "RobotoVariable";
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--black);
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid var(--black);
+  border-radius: 25px;
+  padding-left: 4%;
+  padding-right: 4%;
+  font-family: "RobotoVariable";
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--black);
 }
 
 .card-sec {

@@ -1,7 +1,6 @@
 .navbar-container {
     /* background-color: ; */
-
-    background-color: var(--nav-bg);
+    background-color: transparent;
     backdrop-filter: blur(8px);
     position: sticky;
     top: 1.5rem;
@@ -17,9 +16,9 @@
     justify-content: space-between;
     padding: 1%;
     margin: 1.5rem;
-
-
 }
+
+
 
 .logo-container {
     display: flex;
@@ -37,7 +36,7 @@
     justify-content: space-around;
     font-size: 12px;
     font-weight: 900;
-    color: var(--slogan-color);
+    color: var(--black);
 }
 
 .burger {
@@ -77,6 +76,8 @@
     border-bottom: 4px solid transparent;
     border-radius: 4px;
     font-family: "RobotoVariable";
+    font-stretch: 78%;
+    font-weight: 650;
     font-size: 16px;
     padding-bottom: 4px;
 }
@@ -90,6 +91,7 @@
     border-bottom: 4px solid var(--orangered);
     cursor: pointer;
 }
+
 
 .search-container {
     display: flex;
