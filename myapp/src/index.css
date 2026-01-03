@@ -1,13 +1,30 @@
 @import "./styles/variables.css";
 
+
+
 :root {
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: rgb(228, 222, 211) !important;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: block;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  place-items: center;
+  min-width: 99vw;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  width: 99vw;
 }
 
 @font-face {
@@ -24,14 +41,4 @@
   font-weight: 100 900;
   font-stretch: 75% 125%;
   font-display: swap;
-}
-
-
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }

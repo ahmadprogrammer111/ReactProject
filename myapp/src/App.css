@@ -1,47 +1,195 @@
 #root {
-  background-color: rgb(228, 222, 211);
   width: 99vw;
+  min-height: 400vh;
   height: max-content;
 }
 
-
-
-
-
-.main-container {
-  margin-right: 60px;
-  margin-left: 60px;
+.main_div {
+  max-width: 1300px;
+  padding: 16px;
+  margin: auto;
+  /* margin-right: 60px;
+  margin-left: 60px; */
 }
 
-.bgimage-container {
-  flex-wrap: wrap;
+/*Navbar style*/
+.navbar-container {
+  /* background-color: ; */
+  background-color: transparent;
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 1.5rem;
   display: flex;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./assets/Images/hero.png");
-  /* height: 110vh; */
-  width: 91vw;
-  height: 85vh;
-  margin: 0 auto;
+  flex-direction: row;
+  border: 2px solid var(--light-grey);
+  border-radius: 100px;
+  justify-self: center;
+  width: 89vw;
+  height: 6vh;
+  /* padding: 5px; */
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+  margin: 1.5rem;
+}
+
+.menu_link {
+  display: none;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  /* background-color: #ff4500; */
+  align-items: center;
+  justify-content: space-between;
+  height: 7vh;
+  width: 9vw;
+  /* margin: 4px */
+}
+
+.slogan {
+  font-family: "RobotoVariable";
+  width: 5vw;
+  justify-content: space-around;
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--black) !important;
+}
+
+.navbar {
+  width: 35vw;
+  /* background-color: red; */
+}
+
+.unordered-list {
+  /* background-color: var(--orangered); */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.list-item {
+  display: inline-block;
+  color: var(--light-grey);
+  padding-left: .625rem;
+  padding-right: .625rem;
+  font-family: "RobotoVariable";
+  font-stretch: 78%;
+  font-weight: 650;
+  font-size: 16px;
+  padding-bottom: 4px;
+}
+
+.list-item.scrolled {
+  color: black;
+}
+
+.list-item:hover {
+  color: var(--black);
+  border-bottom: 4px solid var(--orangered);
+  cursor: pointer;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  width: 11vw;
+  justify-content: space-between;
+}
+
+.search {
+  color: var(--black);
+  font-size: 20px;
+}
+
+.search-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-grey);
+  height: 40px;
+  width: 43px;
   border-radius: 50px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* padding-left: 3%; */
+}
+
+.subscribe {
+  font-family: "RobotoVariable";
+  font-weight: 750;
+  font-size: 14px;
+  border-radius: 25px;
+  border-width: 0;
+  width: 7vw;
+  cursor: pointer;
+  background-color: var(--black);
+}
+
+.subscribe:hover {
+  background-color: var(--orangered);
+  border-width: 0;
+  animation: pulse 0.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+/*Body Style*/
+
+
+.bgimage-container {
+  /* flex-wrap: wrap; */
+  display: flex;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/Images/hero.png") center / cover no-repeat;
+  width: 100%;
+  height: 85vh;
+  border-radius: 50px;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
   padding: 2rem 0;
+  overflow: hidden
 }
 
-.UNLEASH {
+.bgimage-container .hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 63%;
+}
+
+.bgimage-container .hero-text .UNLEASH {
   /* background-color: #fff; */
-  color: var();
+  color: var(--white);
   width: 50%;
   font-size: 6rem;
   font-weight: 700;
   text-align: center;
   line-height: 1;
   font-family: "MontserratVariable";
-  margin: 1rem;
+  margin: 0rem;
 }
 
 .aroma {
@@ -50,6 +198,7 @@
   text-align: center;
   font-size: 25px;
   font-weight: 400;
+  font-family: "RobotoVariable";
   /* background-color: red; */
   margin: 0rem;
 }
@@ -98,7 +247,7 @@
 .featured-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px
+  gap: 20px;
 }
 
 .respi-card {
@@ -107,7 +256,7 @@
   position: relative;
   overflow: hidden;
   background-color: var(--grey-white);
-  width: 632px
+  width: 570px;
 }
 
 .content-sec {
@@ -122,7 +271,7 @@
   font-weight: 700;
   font-size: 24px;
   color: var(--black);
-  margin: 0%
+  margin: 0%;
 }
 
 .card-para {
@@ -130,20 +279,16 @@
   font-weight: 300;
   font-size: 16px;
   color: var(--black);
-
 }
-
-
 
 .respi-card .veg-respi {
   width: 100%;
-
 }
 
 .respi-card .Tag {
   position: absolute;
-  right: 20px;
-  top: 45%
+  right: 5%;
+  top: 45%;
 }
 
 .footer-sec {
@@ -176,12 +321,9 @@
   background-color: var(--light-blue);
   padding: 45px;
   border-radius: 45px;
-}
-
-.card-sec {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 350px
+  gap: 50px;
 }
 
 .card-sec .right-sec .menu-li {
@@ -273,7 +415,7 @@
   margin-top: 40px;
 }
 
-.cta-section .cta-inner .EXPLORE {
+.EXPLORE {
   font: "RobotoVariable";
   font-stretch: 85%;
   font-size: 17px;
@@ -332,14 +474,120 @@
 
 ::placeholder {
   color: #9c9c9c;
-  /* ← Your grey (change anytime) */
-  /* font-family: "RobotoVariable", sans-serif; */
-  /* font-weight: 300; */
-  /* Thin & elegant */
-  /* font-stretch: 108%; */
-  /* Slightly wide – matches your style */
   font-size: 12px;
   letter-spacing: 0.5px;
   opacity: 1;
-  /* ← Critical: fixes Firefox looking faded */
+}
+
+
+
+/* Footer  */
+
+
+
+
+.footer-container {
+  background-color: var(--light-black);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  justify-self: center;
+  width: 99%;
+  height: 15vh;
+  align-items: center;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+
+.extra-div {
+  /* background-color: red; */
+  margin-top: 5px;
+  width: 96%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom: 1px solid #424242;
+}
+
+.social_media_icons {
+  /* background-color: orange; */
+  /* background-color: red; */
+  /* margin-right: 2%; */
+  display: flex;
+  /* align-self: flex-end; */
+  justify-self: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 125px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  /* background-color: #ff4500; */
+  align-items: center;
+  justify-content: space-between;
+  height: 7vh;
+  width: 9vw;
+  /* margin: 4px */
+}
+
+.slogan-footer {
+  font-family: "RobotoVariable";
+  width: 5vw;
+  justify-content: space-around;
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--white);
+}
+
+.burger {
+  height: 5vh;
+  width: 3vw;
+}
+
+.footer-bar {
+  width: 35vw;
+  /* background-color: red; */
+}
+
+.unordered-list-footer {
+  /* background-color: var(--orangered); */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+
+.list-item-footer {
+  display: inline-block;
+  color: var(--light-grey);
+  padding-left: .625rem;
+  padding-right: .625rem;
+
+  font-family: "RobotoVariable";
+  font-stretch: 78%;
+  font-weight: 650;
+  font-size: 16px;
+  padding-bottom: 4px;
+}
+
+.list-item-footer:hover {
+
+  border-bottom: 4px solid var(--orangered);
+  border-radius: 4px;
+}
+
+.footerline {
+  font-family: "RobotoVariable";
 }
